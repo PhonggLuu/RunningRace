@@ -12,7 +12,7 @@ using RunGroopWebApp.Data;
 namespace RunGroopWebApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231222162738_InitialCreate")]
+    [Migration("20231224165325_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -78,7 +78,7 @@ namespace RunGroopWebApp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("AddressId")
+                    b.Property<int>("AddressId")
                         .HasColumnType("int");
 
                     b.Property<string>("AppUserId")
@@ -88,12 +88,15 @@ namespace RunGroopWebApp.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -120,18 +123,15 @@ namespace RunGroopWebApp.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("RaceCategory")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -156,7 +156,9 @@ namespace RunGroopWebApp.Migrations
                 {
                     b.HasOne("RunGroopWebApp.Models.Address", "Address")
                         .WithMany()
-                        .HasForeignKey("AddressId");
+                        .HasForeignKey("AddressId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("RunGroopWebApp.Models.AppUser", "AppUser")
                         .WithMany("Clubs")

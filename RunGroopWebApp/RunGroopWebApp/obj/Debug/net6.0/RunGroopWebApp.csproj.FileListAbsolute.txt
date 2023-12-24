@@ -1,34 +1,3 @@
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\appsettings.json
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\RunGroopWebApp.staticwebassets.runtime.json
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\RunGroopWebApp.exe
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\RunGroopWebApp.deps.json
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\RunGroopWebApp.runtimeconfig.json
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\RunGroopWebApp.dll
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\RunGroopWebApp.pdb
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.csproj.AssemblyReference.cache
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.AssemblyInfoInputs.cache
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.AssemblyInfo.cs
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.csproj.CoreCompileInputs.cache
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.RazorAssemblyInfo.cache
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.RazorAssemblyInfo.cs
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\staticwebassets\msbuild.RunGroopWebApp.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\staticwebassets\msbuild.build.RunGroopWebApp.props
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.RunGroopWebApp.props
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.RunGroopWebApp.props
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\scopedcss\bundle\RunGroopWebApp.styles.css
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\scopedcss\projectbundle\RunGroopWebApp.bundle.scp.css
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.dll
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\refint\RunGroopWebApp.dll
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.pdb
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\RunGroopWebApp.genruntimeconfig.cache
-C:\Users\phong pc\Desktop\core mvc\RunGroopWebApp\RunGroopWebApp\obj\Debug\net6.0\ref\RunGroopWebApp.dll
 C:\Users\phong pc\Desktop\RunGroop\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\phong pc\Desktop\RunGroop\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\appsettings.json
 C:\Users\phong pc\Desktop\RunGroop\RunGroopWebApp\RunGroopWebApp\bin\Debug\net6.0\RunGroopWebApp.staticwebassets.runtime.json

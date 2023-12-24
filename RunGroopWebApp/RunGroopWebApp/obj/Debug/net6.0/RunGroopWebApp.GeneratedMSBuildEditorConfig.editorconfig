@@ -16,12 +16,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\phong pc\Desktop\RunGroop\RunGroopWebApp\RunGroopWebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/phong pc/Desktop/RunGroop/RunGroopWebApp/RunGroopWebApp/Views/Club/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2x1YlxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phong pc/Desktop/RunGroop/RunGroopWebApp/RunGroopWebApp/Views/Club/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2x1YlxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/phong pc/Desktop/RunGroop/RunGroopWebApp/RunGroopWebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/phong pc/Desktop/RunGroop/RunGroopWebApp/RunGroopWebApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phong pc/Desktop/RunGroop/RunGroopWebApp/RunGroopWebApp/Views/Race/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/phong pc/Desktop/RunGroop/RunGroopWebApp/RunGroopWebApp/Views/Race/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFjZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/phong pc/Desktop/RunGroop/RunGroopWebApp/RunGroopWebApp/Views/Shared/Error.cshtml]
