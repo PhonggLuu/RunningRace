@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using RunGroopWebApp.Data;
+using RunGroopWebApp.Helpers;
+using RunGroopWebApp.Interfaces;
+using RunGroopWebApp.Repository;
+using RunGroopWebApp.Services;
 
 namespace RunGroopWebApp
 {
@@ -11,17 +15,24 @@ namespace RunGroopWebApp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            //add new services
+            builder.Services.AddScoped<IClubRepository, ClubRepository>();
+            builder.Services.AddScoped<IRaceRepository, RaceRepository>();
+            builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
+            builder.Services.AddScoped<IPhotoService, PhotoService>();
+            //end
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
             var app = builder.Build();
+            //update db with seed data in class Seed.cs
             if(args.Length == 1 && args[0].ToLower() == "seeddata")
             {
                 //Seed.SendUsersAndRolesAsync(app);
                 Seed.SeedData(app);
-            }    
+            }
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
