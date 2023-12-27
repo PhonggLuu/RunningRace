@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CloudinaryDotNet.Actions;
+using Microsoft.AspNetCore.Mvc;
 using RunGroopWebApp.Interfaces;
 using RunGroopWebApp.Models;
 using RunGroopWebApp.ViewModels;
@@ -56,5 +57,60 @@ namespace RunGroopWebApp.Controllers
             }
             return View(clubVM);
         }
+
+        public async Task<IActionResult> Edit(int id)
+        {
+            var club = await _clubRepository.GetClubByIdAsync(id);
+            if (club == null) return View("Error");
+            var clubVM = new EditClubViewModel
+            {
+                Title = club.Title,
+                Description = club.Description,
+                URL = club.Image,
+                AddressId = club.AddressId,
+                Address = club.Address,
+                ClubCategory = club.ClubCategory
+            };
+            return View(clubVM);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, EditClubViewModel clubVM)
+        {
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("", "Failed to edit club");
+                return View("Edit", clubVM);
+            }
+            Club oldClub = await _clubRepository.GetClubByIdAsyncNoTracking(id);
+            if(oldClub != null)
+            {
+                try
+                {
+                    await _photoService.DeletePhotoAsync(oldClub.Image);
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", "Could not delete photo");
+                    return View(clubVM);
+                }
+                ImageUploadResult photoResult = await _photoService.AddPhotoAsync(clubVM.Image);
+                Club club = new Club
+                {
+                    Id = id,
+                    Title = clubVM.Title,
+                    Description = clubVM.Description,
+                    Image = photoResult.Url.ToString(),
+                    AddressId = clubVM.AddressId,
+                    Address = clubVM.Address
+                };
+                _clubRepository.Update(club);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(clubVM);
+            }    
+        }    
     }
 }
