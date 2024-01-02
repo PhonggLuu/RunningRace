@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using RunGroopWebApp.Interfaces;
 using RunGroopWebApp.Models;
+using RunGroopWebApp.Repository;
 using RunGroopWebApp.ViewModels;
 
 namespace RunGroopWebApp.Controllers
@@ -112,6 +113,26 @@ namespace RunGroopWebApp.Controllers
             {
                 return View(raceVM);
             }
+        }
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            Race raceDetails = await _raceRepository.GetRaceByIdAsync(id);
+            if (raceDetails == null) return View("Error");
+            return View(raceDetails);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteRace(int id)
+        {
+            Race raceDetails = await _raceRepository.GetRaceByIdAsync(id);
+            if (raceDetails == null) return View("Error");
+            if (!string.IsNullOrEmpty(raceDetails.Image))
+            {
+                _ = _photoService.DeletePhotoAsync(raceDetails.Image);
+            }
+            _raceRepository.Delete(raceDetails);
+            return RedirectToAction("Index");
         }
     }
 }
