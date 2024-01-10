@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using CloudinaryDotNet;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore.Migrations;
 using RunGroopWebApp.Data.Enum;
 using RunGroopWebApp.Models;
 
@@ -6,6 +8,22 @@ namespace RunGroopWebApp.Data
 {
     public class Seed
     {
+        /*First (SeedData)
+        Add-Migration InitialCreate
+        Update-Database
+        dotnet run seedata(PowerShell)*/
+
+        /*Lưu trữ ảnh: cloudinary.com
+        Dùng package manager console: Install-Package CloudinaryDotNet*/
+
+        /*Second (SeedUsersAndRolesAsync)
+        Add-Migration Identity
+        Update-Database*/
+
+        /*Third (accept null for Address)
+        Add-Migration NullAddressFix
+        Update-Database*/
+
         public static void SeedData(IApplicationBuilder applicationBuilder)
         {
             using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
