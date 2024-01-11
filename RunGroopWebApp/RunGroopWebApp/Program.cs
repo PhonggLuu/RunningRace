@@ -21,6 +21,7 @@ namespace RunGroopWebApp
             //add new services
             builder.Services.AddScoped<IClubRepository, ClubRepository>();
             builder.Services.AddScoped<IRaceRepository, RaceRepository>();
+            builder.Services.AddScoped<IDashboardRepository, DashboardRepository>();
             builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
             builder.Services.AddScoped<IPhotoService, PhotoService>();
             //end
@@ -56,6 +57,8 @@ namespace RunGroopWebApp
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

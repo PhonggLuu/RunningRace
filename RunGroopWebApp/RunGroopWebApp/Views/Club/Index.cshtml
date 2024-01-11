@@ -19,8 +19,11 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <a asp-controller="Club" asp-action="Detail" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">View</a>
-                                    <a asp-controller="Club" asp-action="Edit" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Edit</a>
-                                    <a asp-controller="Club" asp-action="Delete" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Delete</a>
+                                    @if(User.Identity.IsAuthenticated && User.IsInRole("admin"))
+                                    {
+                                        <a asp-controller="Club" asp-action="Edit" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                        <a asp-controller="Club" asp-action="Delete" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Delete</a>
+                                    }
                                     @*<form asp-controller="Club" asp-action="Detail" method="post">
                                         <input type="hidden" name="id" value="@item.Id">
                                         <button type="submit">Chuyển hướng</button>
